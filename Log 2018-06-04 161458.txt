@@ -1,0 +1,375 @@
+nRF Connect, 2018-06-04
+SYD8801-M (F9:68:33:87:BA:A0)
+D	13:13:59.386	gatt.close()
+V	13:13:59.389	Connecting to F9:68:33:87:BA:A0...
+D	13:13:59.389	gatt = device.connectGatt(autoConnect = false)
+D	13:14:00.159	[Server callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	13:14:00.160	[Server] Device with address F9:68:33:87:BA:A0 connected
+V	13:14:00.161	[Server] Creating server connection...
+D	13:14:00.161	server.connect(device, autoConnect = false)
+D	13:14:00.180	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	13:14:00.180	Connected to F9:68:33:87:BA:A0
+D	13:14:00.180	wait(600ms)
+D	13:14:00.229	[Broadcast] Action received: android.bluetooth.device.action.ACL_CONNECTED
+V	13:14:00.807	Discovering services...
+D	13:14:00.807	gatt.discoverServices()
+D	13:14:03.133	[Callback] Services discovered with status: 0
+I	13:14:03.141	Services discovered
+V	13:14:03.227	Generic Access (0x1800)
+- Device Name [R W] (0x2A00)
+- Appearance [R] (0x2A01)
+- Peripheral Preferred Connection Parameters [R] (0x2A04)
+Generic Attribute (0x1801)
+- Service Changed [R] (0x2A05)
+   Client Characteristic Configuration (0x2902)
+Device Information (0x180A)
+- Manufacturer Name String [R] (0x2A29)
+- Model Number String [R] (0x2A24)
+- Serial Number String [R] (0x2A25)
+- Hardware Revision String [R] (0x2A27)
+- Firmware Revision String [R] (0x2A26)
+- Software Revision String [R] (0x2A28)
+- PnP ID [R] (0x2A50)
+Unknown Service (f8c00001-159f-11e6-92f5-0002a5d5c51b)
+- Unknown Characteristic [W] (f8c00002-159f-11e6-92f5-0002a5d5c51b)
+- Unknown Characteristic [N] (f8c00003-159f-11e6-92f5-0002a5d5c51b)
+   Client Characteristic Configuration (0x2902)
+Unknown Service (0000ff00-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [R W] (0000ff01-0000-1000-8000-00805f9b34fb)
+Battery Service (0x180F)
+- Battery Level [N R] (0x2A19)
+   Client Characteristic Configuration (0x2902)
+V	13:14:33.556	Enabling notifications for f8c00003-159f-11e6-92f5-0002a5d5c51b
+D	13:14:33.556	gatt.writeDescriptor(00002902-0000-1000-8000-00805f9b34fb, value=0x0100)
+I	13:14:33.601	Data written to descr. 00002902-0000-1000-8000-00805f9b34fb, value: (0x) 01-00
+A	13:14:33.601	"Notifications enabled" sent
+D	13:14:33.612	gatt.setCharacteristicNotification(f8c00003-159f-11e6-92f5-0002a5d5c51b, true)
+V	13:14:33.614	Notifications enabled for f8c00003-159f-11e6-92f5-0002a5d5c51b
+D	15:04:07.519	[Server callback] Connection state changed with status: 0 and new state: DISCONNECTED (0)
+I	15:04:07.519	[Server] Device disconnected
+D	15:04:07.520	[Callback] Connection state changed with status: 0 and new state: DISCONNECTED (0)
+I	15:04:07.520	Disconnected
+D	15:04:07.531	gatt.refresh() (hidden)
+D	15:04:07.545	[Broadcast] Action received: android.bluetooth.device.action.ACL_DISCONNECTED
+D	16:12:44.045	gatt.close()
+V	16:12:44.049	Connecting to F9:68:33:87:BA:A0...
+D	16:12:44.049	gatt = device.connectGatt(autoConnect = false)
+D	16:12:44.858	[Server callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	16:12:44.858	[Server] Device with address F9:68:33:87:BA:A0 connected
+V	16:12:44.858	[Server] Creating server connection...
+D	16:12:44.859	server.connect(device, autoConnect = false)
+D	16:12:44.882	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	16:12:44.882	Connected to F9:68:33:87:BA:A0
+D	16:12:44.882	wait(600ms)
+D	16:12:44.930	[Broadcast] Action received: android.bluetooth.device.action.ACL_CONNECTED
+V	16:12:45.495	Discovering services...
+D	16:12:45.495	gatt.discoverServices()
+D	16:12:47.762	[Callback] Services discovered with status: 0
+I	16:12:47.772	Services discovered
+V	16:12:47.861	Generic Access (0x1800)
+- Device Name [R W] (0x2A00)
+- Appearance [R] (0x2A01)
+- Peripheral Preferred Connection Parameters [R] (0x2A04)
+Generic Attribute (0x1801)
+- Service Changed [R] (0x2A05)
+   Client Characteristic Configuration (0x2902)
+Device Information (0x180A)
+- Manufacturer Name String [R] (0x2A29)
+- Model Number String [R] (0x2A24)
+- Serial Number String [R] (0x2A25)
+- Hardware Revision String [R] (0x2A27)
+- Firmware Revision String [R] (0x2A26)
+- Software Revision String [R] (0x2A28)
+- PnP ID [R] (0x2A50)
+Unknown Service (f8c00001-159f-11e6-92f5-0002a5d5c51b)
+- Unknown Characteristic [W] (f8c00002-159f-11e6-92f5-0002a5d5c51b)
+- Unknown Characteristic [N] (f8c00003-159f-11e6-92f5-0002a5d5c51b)
+   Client Characteristic Configuration (0x2902)
+Unknown Service (0000ff00-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [R W] (0000ff01-0000-1000-8000-00805f9b34fb)
+Battery Service (0x180F)
+- Battery Level [N R] (0x2A19)
+   Client Characteristic Configuration (0x2902)
+V	16:12:54.156	Enabling notifications for f8c00003-159f-11e6-92f5-0002a5d5c51b
+D	16:12:54.156	gatt.writeDescriptor(00002902-0000-1000-8000-00805f9b34fb, value=0x0100)
+I	16:12:54.177	Data written to descr. 00002902-0000-1000-8000-00805f9b34fb, value: (0x) 01-00
+A	16:12:54.177	"Notifications enabled" sent
+D	16:12:54.188	gatt.setCharacteristicNotification(f8c00003-159f-11e6-92f5-0002a5d5c51b, true)
+V	16:12:54.190	Notifications enabled for f8c00003-159f-11e6-92f5-0002a5d5c51b
+V	16:13:29.246	[Server] Cancelling server connection...
+D	16:13:29.246	server.cancelConnection(device)
+V	16:13:29.248	Disconnecting...
+D	16:13:29.248	gatt.disconnect()
+D	16:13:29.251	[Callback] Connection state changed with status: 0 and new state: DISCONNECTED (0)
+I	16:13:29.251	Disconnected
+D	16:13:29.269	gatt.refresh() (hidden)
+D	16:13:29.272	[Server callback] Connection state changed with status: 0 and new state: DISCONNECTED (0)
+I	16:13:29.272	[Server] Device disconnected
+D	16:13:29.376	[Broadcast] Action received: android.bluetooth.device.action.ACL_DISCONNECTED
+D	16:13:56.777	gatt.close()
+V	16:13:56.781	Connecting to F9:68:33:87:BA:A0...
+D	16:13:56.781	gatt = device.connectGatt(autoConnect = false)
+D	16:14:01.074	[Server callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	16:14:01.074	[Server] Device with address F9:68:33:87:BA:A0 connected
+V	16:14:01.075	[Server] Creating server connection...
+D	16:14:01.075	server.connect(device, autoConnect = false)
+D	16:14:01.097	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	16:14:01.097	Connected to F9:68:33:87:BA:A0
+D	16:14:01.097	wait(600ms)
+D	16:14:01.128	[Broadcast] Action received: android.bluetooth.device.action.ACL_CONNECTED
+V	16:14:01.701	Discovering services...
+D	16:14:01.701	gatt.discoverServices()
+D	16:14:03.957	[Callback] Services discovered with status: 0
+I	16:14:03.967	Services discovered
+V	16:14:04.057	Generic Access (0x1800)
+- Device Name [R W] (0x2A00)
+- Appearance [R] (0x2A01)
+- Peripheral Preferred Connection Parameters [R] (0x2A04)
+Generic Attribute (0x1801)
+- Service Changed [R] (0x2A05)
+   Client Characteristic Configuration (0x2902)
+Device Information (0x180A)
+- Manufacturer Name String [R] (0x2A29)
+- Model Number String [R] (0x2A24)
+- Serial Number String [R] (0x2A25)
+- Hardware Revision String [R] (0x2A27)
+- Firmware Revision String [R] (0x2A26)
+- Software Revision String [R] (0x2A28)
+- PnP ID [R] (0x2A50)
+Unknown Service (f8c00001-159f-11e6-92f5-0002a5d5c51b)
+- Unknown Characteristic [W] (f8c00002-159f-11e6-92f5-0002a5d5c51b)
+- Unknown Characteristic [N] (f8c00003-159f-11e6-92f5-0002a5d5c51b)
+   Client Characteristic Configuration (0x2902)
+Unknown Service (0000ff00-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [R W] (0000ff01-0000-1000-8000-00805f9b34fb)
+Battery Service (0x180F)
+- Battery Level [N R] (0x2A19)
+   Client Characteristic Configuration (0x2902)
+V	16:14:45.988	Enabling notifications for f8c00003-159f-11e6-92f5-0002a5d5c51b
+D	16:14:45.988	gatt.writeDescriptor(00002902-0000-1000-8000-00805f9b34fb, value=0x0100)
+I	16:14:46.005	Data written to descr. 00002902-0000-1000-8000-00805f9b34fb, value: (0x) 01-00
+A	16:14:46.005	"Notifications enabled" sent
+D	16:14:46.017	gatt.setCharacteristicNotification(f8c00003-159f-11e6-92f5-0002a5d5c51b, true)
+V	16:14:46.019	Notifications enabled for f8c00003-159f-11e6-92f5-0002a5d5c51b
+I	16:14:54.643	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 30, "0"
+A	16:14:54.644	"(0x) 30, "0"" received
+I	16:14:54.649	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 31, "1"
+A	16:14:54.649	"(0x) 31, "1"" received
+I	16:14:54.657	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 32, "2"
+A	16:14:54.657	"(0x) 32, "2"" received
+I	16:14:54.662	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 33, "3"
+A	16:14:54.672	"(0x) 33, "3"" received
+I	16:14:54.677	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 34, "4"
+A	16:14:54.677	"(0x) 34, "4"" received
+I	16:14:54.681	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 35, "5"
+A	16:14:54.681	"(0x) 35, "5"" received
+I	16:14:54.687	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 36, "6"
+A	16:14:54.688	"(0x) 36, "6"" received
+I	16:14:54.691	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 37-38, "78"
+A	16:14:54.691	"(0x) 37-38, "78"" received
+I	16:14:54.694	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 39, "9"
+A	16:14:54.694	"(0x) 39, "9"" received
+I	16:14:54.697	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.697	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.702	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.702	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.712	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.712	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.715	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.715	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.718	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.718	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.720	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.720	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.725	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.725	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.729	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.729	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.731	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.731	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.732	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.732	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.734	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.734	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.736	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.736	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.737	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.737	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.739	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.739	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.740	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.740	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.742	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.742	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.744	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.744	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.745	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.746	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.747	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.747	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.748	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.749	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.750	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.750	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.752	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.752	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.754	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.754	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.755	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.755	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.757	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.757	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.759	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.759	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.761	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.761	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.762	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.762	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.763	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.763	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.765	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.765	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.766	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.766	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.768	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.768	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.769	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.769	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.770	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.770	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.771	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.772	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.773	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.773	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.775	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.775	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.776	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.776	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.777	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.777	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.778	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.778	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.780	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.780	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.781	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.781	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.783	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.783	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.784	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.784	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.786	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.786	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.787	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.788	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.789	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.789	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.791	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.791	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.792	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.792	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.794	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.794	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.795	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.795	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.797	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.797	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.798	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.798	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.800	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.800	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.801	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.801	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.803	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.803	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.805	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.805	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.806	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.806	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.807	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.807	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.809	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.809	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.811	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.811	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.812	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.812	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.814	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.814	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.816	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.816	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.817	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.817	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.819	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.819	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.820	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.820	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.822	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.822	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.823	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.823	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.824	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.824	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.826	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.826	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.828	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.828	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.829	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.829	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.830	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.830	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.832	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.832	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.833	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.833	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.835	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.835	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.837	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.837	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.839	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.839	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.841	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.841	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.843	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.843	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.844	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.844	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.846	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.846	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.847	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.847	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.850	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.850	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.851	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.851	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.853	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.853	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.854	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.854	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.856	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.856	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.857	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.857	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.858	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.858	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.860	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.860	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.861	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.861	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.863	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.863	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.864	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.864	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.867	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.867	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.868	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.869	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.870	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.870	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.872	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.872	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.873	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-44-30-31-32-33-34-35-36-37-38-39, "abcdefghiD0123456789"
+A	16:14:54.873	"(0x) 61-62-63-64-65-66-67-68-69-44-30-31-32-33-34-35-36-37-38-39, "abcdefghiD0123456789"" received
+I	16:14:54.875	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"
+A	16:14:54.875	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37-38-39, "abcdefghik0123456789"" received
+I	16:14:54.876	Notification received from f8c00003-159f-11e6-92f5-0002a5d5c51b, value: (0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37, "abcdefghik01234567"
+A	16:14:54.876	"(0x) 61-62-63-64-65-66-67-68-69-6B-30-31-32-33-34-35-36-37, "abcdefghik01234567"" received

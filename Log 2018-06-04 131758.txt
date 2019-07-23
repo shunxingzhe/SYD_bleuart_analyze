@@ -1,0 +1,47 @@
+nRF Connect, 2018-06-04
+SYD8801-M (F9:68:33:87:BA:A0)
+D	13:13:59.386	gatt.close()
+V	13:13:59.389	Connecting to F9:68:33:87:BA:A0...
+D	13:13:59.389	gatt = device.connectGatt(autoConnect = false)
+D	13:14:00.159	[Server callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	13:14:00.160	[Server] Device with address F9:68:33:87:BA:A0 connected
+V	13:14:00.161	[Server] Creating server connection...
+D	13:14:00.161	server.connect(device, autoConnect = false)
+D	13:14:00.180	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	13:14:00.180	Connected to F9:68:33:87:BA:A0
+D	13:14:00.180	wait(600ms)
+D	13:14:00.229	[Broadcast] Action received: android.bluetooth.device.action.ACL_CONNECTED
+V	13:14:00.807	Discovering services...
+D	13:14:00.807	gatt.discoverServices()
+D	13:14:03.133	[Callback] Services discovered with status: 0
+I	13:14:03.141	Services discovered
+V	13:14:03.227	Generic Access (0x1800)
+- Device Name [R W] (0x2A00)
+- Appearance [R] (0x2A01)
+- Peripheral Preferred Connection Parameters [R] (0x2A04)
+Generic Attribute (0x1801)
+- Service Changed [R] (0x2A05)
+   Client Characteristic Configuration (0x2902)
+Device Information (0x180A)
+- Manufacturer Name String [R] (0x2A29)
+- Model Number String [R] (0x2A24)
+- Serial Number String [R] (0x2A25)
+- Hardware Revision String [R] (0x2A27)
+- Firmware Revision String [R] (0x2A26)
+- Software Revision String [R] (0x2A28)
+- PnP ID [R] (0x2A50)
+Unknown Service (f8c00001-159f-11e6-92f5-0002a5d5c51b)
+- Unknown Characteristic [W] (f8c00002-159f-11e6-92f5-0002a5d5c51b)
+- Unknown Characteristic [N] (f8c00003-159f-11e6-92f5-0002a5d5c51b)
+   Client Characteristic Configuration (0x2902)
+Unknown Service (0000ff00-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [R W] (0000ff01-0000-1000-8000-00805f9b34fb)
+Battery Service (0x180F)
+- Battery Level [N R] (0x2A19)
+   Client Characteristic Configuration (0x2902)
+V	13:14:33.556	Enabling notifications for f8c00003-159f-11e6-92f5-0002a5d5c51b
+D	13:14:33.556	gatt.writeDescriptor(00002902-0000-1000-8000-00805f9b34fb, value=0x0100)
+I	13:14:33.601	Data written to descr. 00002902-0000-1000-8000-00805f9b34fb, value: (0x) 01-00
+A	13:14:33.601	"Notifications enabled" sent
+D	13:14:33.612	gatt.setCharacteristicNotification(f8c00003-159f-11e6-92f5-0002a5d5c51b, true)
+V	13:14:33.614	Notifications enabled for f8c00003-159f-11e6-92f5-0002a5d5c51b
